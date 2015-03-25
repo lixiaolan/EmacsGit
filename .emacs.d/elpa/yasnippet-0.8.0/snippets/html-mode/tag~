@@ -1,0 +1,7 @@
+# contributor: Jimmy Wu <frozenthrone88@gmail.com>
+# name: <tag>...</tag>
+# key: tag
+# --
+<${1:tag}>
+$0
+</$1>

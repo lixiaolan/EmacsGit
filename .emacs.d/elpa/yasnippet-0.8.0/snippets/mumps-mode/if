@@ -1,0 +1,6 @@
+# -*- mode: snippet -*-
+# name: if
+# key: if
+# --
+i ${1:codition} d
+. $0

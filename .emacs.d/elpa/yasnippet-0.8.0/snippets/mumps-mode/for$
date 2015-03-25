@@ -1,0 +1,6 @@
+# -*- mode: snippet -*-
+# name: for$
+# key: for$
+# --
+f  s ${1:index}=${2:$o}(${3:array(index)}) q:$1="" d
+. $0

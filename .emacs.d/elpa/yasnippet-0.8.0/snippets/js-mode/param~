@@ -1,0 +1,20 @@
+# -*- mode: snippet -*-
+# name: header
+# key: header
+# --
+/// <summary>${1}<\summary>
+/// <param name="${2}" type="${3}">
+///    ${4}
+/// </param>
+/// <param name="${5}" type="${6}">
+///    ${7}
+/// </param>
+/// <param name="${8}" type="${9}">
+///    ${10}
+/// </param>
+/// <param name="${11}" type="${12}">
+///    ${13}
+/// </param>
+/// <param name="${14}" type="${15}">
+///    ${16}
+/// </param> $0

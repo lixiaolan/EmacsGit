@@ -1,0 +1,20 @@
+# -*- mode: snippet -*-
+# name: header
+# key: header
+# --
+/// <summary>${tag}<\summary>
+/// <param name="${tag}" type="${tag}">
+///    ${tag}
+/// </param>
+/// <param name="${tag}" type="${tag}">
+///    ${tag}
+/// </param>
+/// <param name="${tag}" type="${tag}">
+///    ${tag}
+/// </param>
+/// <param name="${tag}" type="${tag}">
+///    ${tag}
+/// </param>
+/// <param name="${tag}" type="${tag}">
+///    ${tag}
+/// </param>
