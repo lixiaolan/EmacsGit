@@ -145,3 +145,54 @@ Set mumps-shell for CDE"
             (define-key yas-minor-mode-map (kbd "<C-tab>") 'yas-expand)
             (define-key yas-minor-mode-map (kbd "TAB") nil)
             ))
+
+
+;; My custom hook for editing xml comments!
+(defun ljj-xml-comments-hook ()
+  (defun ljj-open-selected-in-buffer () 
+    "This takes selected text and opens it in a new buffer at point."
+    (interactive)
+    (setq ljj-child-buffer "ljj-child-buffer")		; Default scratch buffer
+    (setq ljj-text (buffer-substring (mark) (point)))
+    (get-buffer-create ljj-child-buffer)
+    (setq ljj-parrent-buffer (current-buffer))
+    (set-buffer ljj-child-buffer)
+    (insert ljj-text)
+    (js-mode)
+    (uncomment-region (point-min) (point-max))
+    (nxml-mode)
+    (local-set-key "\C-c'" 'ljj-replace-selected-with-buffer)
+    (make-local-variable 'ljj-parrent-buffer)
+    (switch-to-buffer ljj-child-buffer)
+    t)
+
+  (defun ljj-replace-selected-with-buffer ()
+    "This takes all the text from a buffer and replaces selected region with that text"
+    (interactive)
+    (setq ljj-child-buffer "ljj-child-buffer")	       	; Default scratch buffer
+    (set-buffer ljj-child-buffer)
+    (js-mode)
+    (setq comment-start "///")
+    (comment-region (point-min) (point-max))
+    (setq ljj-text (buffer-substring (point-min) (point-max)))
+    (set-buffer ljj-parrent-buffer)
+    (delete-region (mark) (point))
+    (insert ljj-text)
+    (switch-to-buffer ljj-parrent-buffer)
+    (kill-buffer ljj-child-buffer)
+    t)  
+
+  (local-set-key "\C-c'" 'ljj-open-selected-in-buffer)
+
+  t)
+
+;; Add the hook to both js-mode and csharp-mode
+(add-hook 'js-mode-hook 'ljj-xml-comments-hook)
+(add-hook 'csharp-mode-hook 'ljj-xml-comments-hook)
+
+
+
+
+
+
+
