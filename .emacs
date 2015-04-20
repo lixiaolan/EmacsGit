@@ -11,10 +11,6 @@
 ;; For using mumps mode :)
 ;to use mumps-shell-ssh, instead of mumps-shell-win (which needs ntelnet)
 
-
-;; ;to use tramp and ssh
-;; (require 'tramp)  
-
 ;; ;; settup for tramp mode
 ;; (setq tramp-default-method "plink")
 
@@ -73,8 +69,12 @@ Set mumps-shell for CDE"
 (load-theme 'tango-dark t)
 
 ;; Allow <shift>-<arrow> to switch buffers
-(require 'windmove)
-(windmove-default-keybindings 'shift)
+;; (require 'windmove)
+;; (windmove-default-keybindings 'shift)
+
+;; Switching buffers using shift instead
+(global-set-key (kbd "<S-left>") 'previous-buffer)                                  
+(global-set-key (kbd "<S-right>") 'next-buffer)                                     
 
 
 ;;to turn off alarms:
@@ -142,9 +142,20 @@ Set mumps-shell for CDE"
 ;; tell so it is a safe choice.
 (add-hook 'yas-global-mode-hook
           (lambda ()
-            (define-key yas-minor-mode-map (kbd "<C-tab>") 'yas-expand)
             (define-key yas-minor-mode-map (kbd "TAB") nil)
+            (define-key yas-minor-mode-map (kbd "<tab>") nil)
+            (define-key yas-minor-mode-map (kbd "<C-tab>") 'yas-expand)
+            (setq yas-snippet-dirs (append yas-snippet-dirs '("~/.emacs.d/snippets/")))
             ))
+(add-hook 'yas-minor-mode-hook
+          (lambda ()
+            (define-key yas-minor-mode-map (kbd "TAB") nil)
+            (define-key yas-minor-mode-map (kbd "<tab>") nil)
+            (define-key yas-minor-mode-map (kbd "<C-tab>") 'yas-expand)
+            (setq yas-snippet-dirs (append yas-snippet-dirs '("~/.emacs.d/snippets/")))
+            ))
+
+
 
 
 ;; My custom hook for editing xml comments!

@@ -1,0 +1,49 @@
+;;; -*- coding: utf-8 -*-
+
+;; ----- ido-last-directory-list -----
+(
+ ("c:/Users/ljefferi/AppData/Roaming/.emacs.d/WS/Work/" . "emacs/")
+ ("c:/Users/ljefferi/AppData/Roaming/.emacs.d/WS/" . "Work/")
+ ("c:/Users/ljefferi/AppData/Roaming/.emacs.d/" . "WS/")
+ ("c:/Users/ljefferi/AppData/Roaming/" . ".emacs.d/")
+)
+
+;; ----- ido-work-directory-list -----
+(
+ "c:/Users/ljefferi/AppData/Roaming/.emacs.d/WS/Work/emacs/"
+ "c:/Users/ljefferi/AppData/Roaming/.emacs.d/WS/Work/"
+)
+
+;; ----- ido-work-file-list -----
+(
+ "mumps-mode.el"
+ "Use emacs editing cache routines.docx"
+)
+
+;; ----- ido-dir-file-cache -----
+(
+ ("c:/Users/ljefferi/AppData/Roaming/.emacs.d/WS/Work/emacs/" (21733 7017 0 0) "tint-instances.el" "telnet-mode.el" "mumps-shell.el~" "mumps-shell.el" "mumps-shell-win.el~" "mumps-shell-win.el" "mumps-mode.el" "checksum.el" "../" "./")
+
+ ("c:/Users/ljefferi/AppData/Roaming/.emacs.d/WS/Work/" (21734 3632 0 0) "Use emacs editing cache routines.docx" "emacs/" "../" "./")
+
+ ("c:/Users/ljefferi/AppData/Roaming/.emacs.d/WS/" (21726 27133 0 0) "Work/" "bin/" "../" "./")
+
+ ("c:/Users/ljefferi/AppData/Roaming/.emacs.d/" (21726 27445 0 0) "WS/" "tramp" "mumps-mode/" "elpa/" "auto-save-list/" "../" "./")
+
+ ("c:/Users/ljefferi/AppData/Roaming/" (21730 19654 0 0) "Webex/" "Subversion/" "Microsoft/" "McAfee/" "Macromedia/" "ICAClient/" "Epic Systems Corporation/" "Attachmate/" "Adobe/" ".emacs~" ".emacs.d/" ".emacs" "../" "./")
+
+ ("c:/Users/" (21707 65091 0 0) "Public/" "ljefferi/" "desktop.ini" "Default User/" "Default/" "All Users/" "Administrator/" "../" "./")
+
+ ("c:/Users/ljefferi/" (21729 62409 0 0) "Videos/" "Templates/" "Start Menu/" "SendTo/" "Searches/" "Saved Games/" "Recent/" "PrintHood/" "Pictures/" "ntuser.pol" "ntuser.ini" "NTUSER.DAT{bbed3e3b-0b41-11e3-8249-d6927d06400b}.TMContainer00000000000000000002.regtrans-ms" "NTUSER.DAT{bbed3e3b-0b41-11e3-8249-d6927d06400b}.TMContainer00000000000000000001.regtrans-ms" "NTUSER.DAT{bbed3e3b-0b41-11e3-8249-d6927d06400b}.TM.blf" "ntuser.dat.LOG2" "ntuser.dat.LOG1" "NTUSER.DAT" "NetHood/" "My Documents/" "Music/" "Local Settings/" "Links/" "IntelGraphicsProfiles/" "Favorites/" "Downloads/" "Documents/" "Desktop/" "Cookies/" "Contacts/" "Application Data/" "AppData/" ".kdiff3rc" "../" "./")
+
+ ("c:/Users/ljefferi/Desktop/" (21730 34820 0 0) "WS/" "Use emacs editing cache routines.docx" "Training EpicStudio.lnk" "Training EMC2.lnk" "Training/" "TmpInstall/" "MSDN Library - October 2001.lnk" "http%3a%2f%2fwww.netgull.com%2fcygwin%2f/" "EpicStudio.lnk" "desktop.ini" "certnew.p7b" "../" "./")
+
+ ("c:/Users/ljefferi/Desktop/Training/" (21729 63354 0 0) "RD New Hire Packet.pdf" "PTC Materials/" "Epic Patient Portal 2014.pdf" "C Sharp Training Materials/" "../" "./")
+
+ ("c:/Users/ljefferi/Desktop/Training/PTC Materials/" (21729 20455 0 0) "Server/" "PTC Sample Completed Designs/" "Exercise Designs/" "Companions With Answers/" "Code/" "Client/" "../" "./")
+
+ ("c:/Users/ljefferi/Desktop/Training/PTC Materials/Code/" (21734 3576 0 0) "K2.mumps~" "K2.mumps" "K1.mumps~" "K1.mumps" "J3.mumps" "J2.mumps" "J1.mumps" "IM.mumps" "../" "./")
+)
+
+;; ----- ido-unc-hosts-cache -----
+t

@@ -1,0 +1,10 @@
+# contributor: LJJ
+# name: public void Method { ... }
+# key: proptrack
+# --
+[DataSynchronizationMember]
+public ${1:string} ${2:MyProperty}
+{
+    get { return this.GetProperty<$1>("$2"); }
+    set { this.SetProperty<$1>("$2", value); }
+}
